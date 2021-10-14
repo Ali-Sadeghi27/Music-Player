@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player(Ali Sadeghi)</title>
+    <script src="https://kit.fontawesome.com/40ecd857dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="player">
+            <div class="player__control">
+                <div class="player__btn player__btn--small" id="previous">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <h5 class="player__title">Ali Sadeghi</h5>
+                <div class="player__btn player__btn--small" id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="player__album">
+                <img src="https://s4.uupload.ir/files/pexels-paul-ijsendoorn-33041_ry6y.jpg" alt="Alum Cover" 
+                class="player__img" loading="lazy">
+            </div>
+            <h2 class="player__artist">Payatam Man</h2>
+            <h3 class="player__song">Asef Arya</h3>
+            <input type="range" class="player__level" value="10" min="0" id="range">
+            <div class="audio-duration">
+                <div class="start">
+                    00:01
+                </div>
+                <div class="end">
+                    02:34
+                </div>
+            </div>
+            <audio class="player__audio" controls id="audio">
+                <source src="https://drive.google.com/file/d/1hPLzODt-8zojRhVjQgoktiOnT3i3osHN/preview?usp=sharing" type="audio/mpeg">
+            </audio>
+            <div class="player__control">
+                <div class="player__btn player__btn--medium" id="backward">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="player__btn player__btn--medium blue play" id="play">
+                    <i class="fas fa-play play-btn"></i>
+                    <i class="fas fa-pause pause-btn hide"></i>
+                </div>
+                <div class="player__btn player__btn--medium" id="forward">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="myscript.js"></script>
+
+</html>
